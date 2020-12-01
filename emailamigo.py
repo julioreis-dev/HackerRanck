@@ -37,7 +37,7 @@ def enviarmail(toadrr, name, namedest):
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, 'Manuela01*')
+        server.login(fromaddr, '*******')
         text = msg.as_string()
         server.sendmail(fromaddr, toadrr, text)
         server.quit()
