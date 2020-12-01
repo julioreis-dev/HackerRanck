@@ -36,7 +36,8 @@ while flag:
         # to = dictdados[amigoculto][1]
         listamigos.append(amigoculto)
         index += 1
-        print(f'{dename} ({fromadress}) o seu amigo oculto é --> {destname}')
+        print(f'{dename} o seu amigo oculto é --> {destname}')
         enviarmail(fromadress, dename, destname)
     if index == numero_linha:
+        print(f'Emails endereçados a todos os participantes com sucesso!!!')
         flag = False
